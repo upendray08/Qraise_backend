@@ -24,7 +24,7 @@ Session(app)
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Yupen@240800",
+    password="*******", 
     database="qraise",
     port=3306
 )
@@ -123,7 +123,7 @@ def campaign_details():
         db = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Yupen@240800",
+            password="*******",
             database="qraise",
             port=3306
         )
@@ -160,7 +160,7 @@ def get_campaigns():
         db = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Yupen@240800",
+            password="*******",
             database="qraise",
             port=3306
         )
@@ -185,7 +185,7 @@ def get_yourcampaign():
         db = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Yupen@240800",
+            password="*******",
             database="qraise",
             port=3306
         )
@@ -405,7 +405,7 @@ def payment_success():
     db_conn = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Yupen@240800",
+        password="*******",
         database="qraise",
         port=3306)
     cursor = db_conn.cursor()
@@ -452,7 +452,7 @@ def payment_success():
 @app.route('/get-payment-data')
 def get_payment_data():
     connection = mysql.connector.connect(
-        host='localhost', database='qraise', user='root', password='Yupen@240800')
+        host='localhost', database='qraise', user='root', password='*******')
     cursor = connection.cursor()
     # cursor.execute("SELECT date, campaign, amount FROM payment")
     global var_email
@@ -482,7 +482,7 @@ def get_campaign_names():
             host='localhost',
             database='qraise',
             user='root',
-            password='Yupen@240800'
+            password='*******'
         )
         cursor = connection.cursor()
         cursor.execute("SELECT campaign_name FROM campaigns")
@@ -508,7 +508,7 @@ def get_campaign_donations():
             host='localhost',
             database='qraise',
             user='root',
-            password='Yupen@240800'
+            password='********'
         )
         cursor = connection.cursor(dictionary=True)
         # sql_query = """
